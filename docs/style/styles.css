@@ -1,0 +1,45 @@
+/* css styles */
+.tool-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 400px; */
+}
+.tool-description {
+    font-size: 1.2em; /* Adjust the font size of the description */
+    margin-top: 10px;
+    width: 100%; /* Set width to 100% of parent container */
+    max-width: 500px; /* Ensure it does not exceed the parent container width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    white-space: normal !important; /* Enable text wrapping */
+    overflow-wrap: break-word !important; /* Ensure long words break to the next line */
+    text-align: center; /* Center the text */
+
+}
+
+.panel-tabset > .panel {
+    min-height: 400px; /* Set a minimum height for each panel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.tool-logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tool-title {
+    font-size: 2em; /* Adjust the font size of the title */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
