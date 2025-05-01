@@ -43,3 +43,45 @@
     margin-top: 10px;
 }
 
+/* ハンバーガーメニューに影響されない右側のリンク */
+.navbar .navbar-right {
+  position: absolute;
+  right: 15px; /* 画面右端に配置 */
+  top: 50%; /* 縦位置を中央に調整 */
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px; /* 各リンクの間隔を調整 */
+}
+
+/* ハンバーガーメニューに残るリンク */
+.navbar .navbar-left {
+  margin-right: auto; /* 左寄せを維持 */
+}
+
+/* ハンバーガーメニューが開いても右側リンクは独立 */
+.navbar .navbar-collapse {
+  justify-content: flex-start;
+}
+
+/* レスポンシブ対応で右側リンクを常に表示 */
+@media (max-width: 768px) {
+  .navbar .navbar-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: white; /* 背景色を追加 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1050;
+  }
+}
+
+#refs {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+#refs > div.csl-entry {
+  display: list-item;
+  margin-bottom: 0.5em;
+}
